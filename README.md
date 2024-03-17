@@ -14,4 +14,4 @@ As I start this learning journey, I aim to strengthen my grasp of programming fu
 <a href="https://www.instagram.com/freecodecamp/"><img src="https://github.com/dheereshagrwal/colored-icons/blob/master/public/icons/instagram/instagram.svg" alt="Instagram Icon" width="48" height="48"></a>
 
 ## Quick Navigation
-- [Responsive Web Design](#responsive-web-design)
+- [Responsive Web Design](https://github.com/Moramarth/freeCodeCamp-Curriculum/tree/main/Responsive%20Web%20Design)
