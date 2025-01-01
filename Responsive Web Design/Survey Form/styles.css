@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite
+}
+
+body {
+    padding: 3rem;
+}
+
+main {
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: #369;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.7rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+h1,
+#description {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 0.7rem;
+    margin-bottom: 0.5em;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #369;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid limegreen !important;
+    outline-width:0;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.martial-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.children-traits {
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    justify-items: left;
+}
+
+#description {
+    margin-top: -1rem;
+}
+
+#dropdown {
+    height: 1.63rem;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    background-color: limegreen;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+
+}
+
+#submit:hover {
+    background-color: lawngreen;
+}
+
+@media (max-width: 650px){
+   
+    .children-traits {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .martial-status {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 1rem;
+    }
+
+    .children-traits {
+        grid-template-columns: 1fr;
+    }
+
+    .martial-status {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

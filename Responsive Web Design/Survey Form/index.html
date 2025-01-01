@@ -1,89 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Parent</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Parent</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <body>
+        <main>
+            <!-- User Stories: -->
 
-<body>
-    <!-- User Stories: -->
+            <!-- You should have a page title in an h1 element with an id of title -->
+            <h1 id="title">Hero Parent</h1>
+            <!-- You should have a short explanation in a p element with an id of description -->
+            <p id="description">Your place to share valuable experience</p>
+            <!-- You should have a form element with an id of survey-form -->
+            <form id="survey-form" action="">
+                <fieldset class="personal-info">
+                    <legend>Personal Information</legend>
+                    <!-- For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label" -->
+                    <!-- For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field -->
 
-    <!-- You should have a page title in an h1 element with an id of title -->
-    <h1 id="title">Hero Parent</h1>
-    <!-- You should have a short explanation in a p element with an id of description -->
-    <p id="description">Your place to share valuable experience</p>
-    <!-- You should have a form element with an id of survey-form -->
-    <form action="" id="survey-form">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <!-- For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label" -->
-            <!-- For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field -->
+                    <!-- Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text -->
+                    <label id="name-label">Your name:
+                        <input id="name" type="text" placeholder="Your name here" required>
+                    </label>
+                    <!-- Inside the form element, you are required to enter your email in an input field that has an id of email -->
+                    <!-- If you enter an email that is not formatted correctly, you will see an HTML5 validation error -->
+                    <label id="email-label">Email:
+                        <input id="email" type="email" placeholder="Add an email adress" required>
+                    </label>
+                    <!-- Inside the form, you can enter a number in an input field that has an id of number -->
+                    <!-- The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser). -->
+                    <!-- If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error -->
+                    <label id="number-label">Age:
+                        <input type="number" id="number" min="18" max="120" placeholder="Age">
+                    </label>
+                    <!-- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from -->
+                    <label>Number of chidren:
+                        <select name="dropdown" id="dropdown">
+                            <option value="0" selected disabled>Choose from list</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four or more</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <!-- Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute -->
+                <fieldset class="martial-status">
+                    <legend>Martial status</legend>
+                    <label><input type="radio" name="martial-status" value="single"> Single</label>
+                    <label><input type="radio" name="martial-status" value="married"> Married</label>
+                    <label><input type="radio" name="martial-status" value="divorced"> Divorced</label>
+                    <label><input type="radio" name="martial-status" value="widowed"> Widowed</label>
+                    <label><input type="radio" name="martial-status" value="other"> Other</label>
+                </fieldset>
+                <!-- Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute -->
+                <fieldset>
+                    <legend>Which traits apply the most to your children</legend>
+                    <div class="children-traits">
+                        <label><input type="checkbox" value="curious"> Curious</label>
+                        <label><input type="checkbox" value="creative"> Creative</label>
+                        <label><input type="checkbox" value="energetic"> Energetic</label>
+                        <label><input type="checkbox" value="empathetic"> Empathetic</label>
+                        <label><input type="checkbox" value="adventurous"> Adventurous</label>
+                        <label><input type="checkbox" value="independent"> Independent</label>
+                        <label><input type="checkbox" value="sociable"> Sociable</label>
+                        <label><input type="checkbox" value="imaginative"> Imaginative</label>
+                        <label><input type="checkbox" value="persistent"> Persistent</label>
+                        <label><input type="checkbox" value="responsible"> Responsible</label>
+                        <label><input type="checkbox" value="resilient"> Resilient</label>
+                        <label><input type="checkbox" value="assertive"> Assertive</label>
+                        <label><input type="checkbox" value="observant"> Observant</label>
+                        <label><input type="checkbox" value="cooperative"> Cooperative</label>
+                        <label><input type="checkbox" value="playful"> Playful</label>
+                        <label><input type="checkbox" value="confident"> Confident</label>
+                        <label><input type="checkbox" value="compassionate"> Compassionate</label>
+                        <label><input type="checkbox" value="analytical"> Analytical</label>
+                        <label><input type="checkbox" value="expressive"> Expressive</label>
+                        <label><input type="checkbox" value="flexible"> Flexible</label>
+                    </div>
+                </fieldset>
+                <!-- Inside the form element, you are presented with a textarea for additional comments -->
+                <label>Your story or advice
+                    <textarea placeholder="Tell us something interesting about your children..."></textarea>
+                </label>
 
-            <!-- Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text -->
-            <label for="name" id="name-label">Your name:</label>
-            <input type="text" id="name" placeholder="Your name here" required>
-            <!-- Inside the form element, you are required to enter your email in an input field that has an id of email -->
-            <!-- If you enter an email that is not formatted correctly, you will see an HTML5 validation error -->
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" placeholder="Add an email adress" required>
-            <!-- Inside the form, you can enter a number in an input field that has an id of number -->
-            <!-- The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser). -->
-            <!-- If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error -->
-            <label for="number" id="number-label">Age:</label>
-            <input type="number" id="number" min="18" max="120" placeholder="Age">
-            <!-- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from -->
-            <select name="dropdown" id="dropdown">
-                <option value="0" selected disabled>Number of children</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="4">Four or more</option>
-            </select>
-        </fieldset>
-        <!-- Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute -->
-        <fieldset>
-            <legend>Martial status</legend>
-            <label><input type="radio" name="martial-status" value="single"> Single</label>
-            <label><input type="radio" name="martial-status" value="married"> Married</label>
-            <label><input type="radio" name="martial-status" value="divorced"> Divorced</label>
-            <label><input type="radio" name="martial-status" value="widowed"> Widowed</label>
-            <label><input type="radio" name="martial-status" value="other"> Other</label>
-        </fieldset>
-        <!-- Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute -->
-        <fieldset>
-            <legend>Which traits apply the most to your children</legend>
-            <label><input type="checkbox" value="curious"> Curious</label><br>
-            <label><input type="checkbox" value="creative"> Creative</label><br>
-            <label><input type="checkbox" value="energetic"> Energetic</label><br>
-            <label><input type="checkbox" value="empathetic"> Empathetic</label><br>
-            <label><input type="checkbox" value="adventurous"> Adventurous</label><br>
-            <label><input type="checkbox" value="independent"> Independent</label><br>
-            <label><input type="checkbox" value="sociable"> Sociable</label><br>
-            <label><input type="checkbox" value="imaginative"> Imaginative</label><br>
-            <label><input type="checkbox" value="persistent"> Persistent</label><br>
-            <label><input type="checkbox" value="responsible"> Responsible</label><br>
-            <label><input type="checkbox" value="resilient"> Resilient</label><br>
-            <label><input type="checkbox" value="assertive"> Assertive</label><br>
-            <label><input type="checkbox" value="observant"> Observant</label><br>
-            <label><input type="checkbox" value="cooperative"> Cooperative</label><br>
-            <label><input type="checkbox" value="playful"> Playful</label><br>
-            <label><input type="checkbox" value="confident"> Confident</label><br>
-            <label><input type="checkbox" value="compassionate"> Compassionate</label><br>
-            <label><input type="checkbox" value="analytical"> Analytical</label><br>
-            <label><input type="checkbox" value="expressive"> Expressive</label><br>
-            <label><input type="checkbox" value="flexible"> Flexible</label><br>
-        </fieldset>
-        <!-- Inside the form element, you are presented with a textarea for additional comments -->
-        <label>Your story or advice
-            <textarea placeholder="Tell us something interesting about your children..."></textarea>
-        </label>
-
-        <!-- Inside the form element, you are presented with a button with id of submit to submit all the inputs -->
-        <button id="submit">Submit</button>
-    </form>
-</body>
-
+                <!-- Inside the form element, you are presented with a button with id of submit to submit all the inputs -->
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
 </html>
