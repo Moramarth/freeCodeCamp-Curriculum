@@ -1,0 +1,41 @@
+/*
+16. DONE Your img element should have a display of block.
+17. DONE Your #image should have a max-width of 100%.
+18. DONE Your #image should have a height of auto.
+19. DONE Your #image should be centered within its parent.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 60em;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+h1 {
+    color:  #43B02A;
+}
+
+#tribute-info {
+    background-color: #1C1C1C;
+}
+
+#image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 40em;
+    max-width: 100%;
+}
+
+a {
+    color: #43B02A
+}
