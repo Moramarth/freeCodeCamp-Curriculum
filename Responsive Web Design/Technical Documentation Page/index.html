@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCS Maintenance-Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--User Stories:-->
+
+<!-- You can see a nav element with a corresponding id="navbar" -->
+    <!--
+    On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+    Your technical documentation should use at least one media query
+    --> 
+    <nav id="navbar">
+        <!--The navbar element should contain one header element which contains text that describes the topic of the technical documentation-->
+        <!--The header element in the #navbar must come before any link (a) elements in the navbar-->
+        <header><h1>Maintenance-Management Documentation</h1></header>
+        <!-- Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section -->
+        <!--
+        Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+        When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+        -->
+        <ul>
+            <li><a href="#general_info" class="nav-link">General Info</a></li>
+            <li><a href="#business_logic" class="nav-link">Business logic</a></li>
+            <li><a href="#getting_started" class="nav-link">Getting started</a></li>
+            <li><a href="#permissions_for_engineering" class="nav-link">Permissions for Engineering</a></li>
+            <li><a href="#permissions_for_supervisor" class="nav-link">Permissions for Supervisor</a></li>
+            <li><a href="#setting_up_roles" class="nav-link">Setting up roles</a></li>
+            <li><a href="#intended_user_creation" class="nav-link">Intended user creation</a></li>
+            
+        </ul>
+     </nav>
+
+    <!-- You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation) -->
+    <main id="main-doc">
+        <!-- Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five -->
+        <!-- Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")-->
+        <!--
+        The .main-section elements should contain at least ten p elements total (not each)
+        The .main-section elements should contain at least five code elements total (not each)
+        The .main-section elements should contain at least five li items total (not each)
+        -->
+        <section id="general_info" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>General Info</h2>
+            </header>
+            <p>Framework:
+                <ul>
+                    <li>Django 4.2.1</li>
+                </ul>
+            </p>
+            <p>Database:
+                <ul>
+                    <li>PostgreSQL</li>
+                </ul>
+            </p>
+            <p>Third-party apps:
+                <ul>
+                    <li>django-filter 23.2</li>
+                    <li>django-storages 1.13.2</li>
+                </ul>
+            </p>
+            <p>Services:
+                <ul>
+                    <li>AWS S3</li>
+                    <li>Google Maps API</li>
+                </ul>
+            </p>
+            <p>Styles:
+                <ul>
+                    <li>Bootstrap 5</li>
+                    <li>Fontawesome</li>
+                    <li>MagnificPopup</li>
+                    <li>CSS</li>
+                </ul>
+            </p>
+            <code>TODO</code>
+            <code>TODO</code>
+            <code>TODO</code>
+            <code>TODO</code>
+        </section>
+        <section id="business_logic" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Business logic</h2>
+            </header>
+            <div>
+                <p>Service is only available for business partners. Registration is available after invitation from the company service owner.</p>
+
+                <p>Tenants(Clients) can report issues that need attention in the owner`s buildings.</p>
+
+                <p>Supervisors and the engineering team take appropriate actions to resolve the issues.</p>
+
+                <p>If extra work is required a 3rd party (Contractors) can be assigned to tackle the problem.</p>
+
+                <p>Contractors can arrange a meeting for getting additional information or if they believe information is enough an offer can be created for doing the work.</p>
+
+                <p>Contacts info is available at any given step so people can communicate via e-mail or phone when needed.</p>
+            </div>
+        </section>
+        <section id="getting_started" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Getting started</h2>
+            </header>
+            <div>
+                <p>Four Groups need to be created that also work as roles control. Clients, Contractors, Engineering and Supervisor One user can belong to only one Group</p>
+
+                <p>Clients and Contractors have no permissions in the admin site</p>
+
+                <p>If you need any additional information contact me via links on my profile page.</p>
+            </div>
+        </section>
+        <section id="permissions_for_engineering" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Permissions for Engineering</h2>
+            </header>
+            <ul>
+                <li>accounts | app user profile | Can view app user profile</li>
+                <li>clients | review | Can view review</li>
+                <li>clients | service report | Can view service report</li>
+                <li>common | company | Can view company</li>
+                <li>contractors | meeting | Can view meeting</li>
+                <li>estate | additional address information | Can view additional address information</li>
+                <li>estate | building | Can view building</li>
+                <li>supervisor | assignment | Can add assignment</li>
+                <li>supervisor | assignment | Can change assignment</li>
+                <li>supervisor | assignment | Can view assignment</li>
+            </ul>
+        </section>
+        <section id="permissions_for_supervisor" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Permissions for Supervisor</h2>
+            </header>
+            <ul>
+                <li>accounts | app user | Can change, delete and view app user</li>
+                <li>accounts | app user profile | Can view app user profile</li>
+                <li>accounts | register invitation | full CRUD</li>
+                <li>clients | review | delete and view review</li>
+                <li>clients | service report | delete and view service report</li>
+                <li>common | company | full CRUD</li>
+                <li>contractors | expenses estimate | delete and view expenses estimate</li>
+                <li>contractors | meeting | delete and view meeting</li>
+                <li>estate | additional address information | full CRUD</li>
+                <li>estate | building | full CRUD</li>
+                <li>supervisor | assignment | full CRUD</li>
+            </ul>
+        </section>
+        <section id="setting_up_roles" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Setting up roles</h2>
+            </header>
+            <p>To manually create users(error free) set SUSPEND_SIGNALS to True in settings.py</p>
+            <code>
+                # Default SUSPEND_SIGNALS should be false
+                SUSPEND_SIGNALS = config('SUSPEND_SIGNALS') == "True"
+            </code>
+            <ul>
+                <li>create superuser
+                    <code>#This is done by typing this command in the command view: py manage.py createsuperuser</code>
+                </li>
+                <li>create groups and add permission as shown above</li>
+                <li>create at least one building object and one company object</li>
+                <li>assign superuser to Supervisor group, so you can navigate main site</li>
+                <li>create one user and assign it to the Supervisor group to see admin site as intended</li>
+                <li>create at least one user for each of the other groups to test different scenarios</li>
+            </ul>
+        </section>
+        <section id="intended_user_creation" class="main-section">
+            <!-- The first element within each .main-section should be a header element, which contains text that describes the topic of that section. -->
+            <header>
+                <h2>Intended user creation</h2>
+            </header>
+            <ul>
+                <li>User is invited by the Supervisor with Register Invitation object</li>
+                <li>After receiving the invitation e-mail and following his generated url user can register to the system. Empty profile is created and attached to the user object.</li>
+                <li>If user is staff Supervisor needs to set it to True after registration(can be changed to automatic later).</li>
+                <li>Clients and Contractors can also invite people to become part of their company</li>
+            </ul>
+        </section>
+    </main>
+    
+    <!--  
+    
+1. DONE You should have a main element with an id of main-doc.
+2. DONE You should have at least five section elements with a class of main-section.
+3. DONE All of your .main-section elements should be section elements.
+4. DONE You should have at least five .main-section elements that are descendants of #main-doc.
+5. DONE The first child of each .main-section should be a header element.
+6. TODO None of your header elements should be empty.
+7. TODO All of your .main-section elements should have an id.
+8. TODO Each .main-section should have an id that matches the text of its first child, having any spaces in the child's text replaced with underscores (_) for the id's.
+9. TODO You should have at least 10 p elements (total) within your .main-section elements.
+10. TODO You should have at least five code elements that are descendants of .main-section elements.
+11. TODO You should have at least five li elements that are descendants of .main-section elements.
+12. DONE You should have a nav element with an id of navbar.
+13. DONE Your #navbar should have exactly one header element within it.
+14. DONE You should have at least one a element with a class of nav-link.
+15. DONE All of your .nav-link elements should be anchor (a) elements.
+16. DONE All of your .nav-link elements should be in the #navbar.
+17. DONE You should have the same number of .nav-link and .main-section elements.
+18. DONE The header element in the #navbar should come before any link (a) elements also in the #navbar.
+19. DONE Each .nav-link should have text that corresponds to the header text of its related section (e.g. if you have a "Hello world" section/header, your #navbar should have a .nav-link which has the text "Hello world").
+20. DONE Each .nav-link should have an href attribute that links to its corresponding .main-section (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id).
+21. TODO Your #navbar should always be on the left edge of the window.
+22. DONE Your Technical Documentation project should use at least one media query.
+    -->
+</body>
+</html>
