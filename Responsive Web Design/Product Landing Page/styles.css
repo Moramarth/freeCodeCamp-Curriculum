@@ -1,0 +1,25 @@
+/* Your product landing page should utilize CSS flexbox at least once */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#header-img {
+    width: 80px;
+}
+
+#video {
+    width: 50%;
+    height: 400px;
+    margin: 10px auto;
+}
+
+/* Your product landing page should have at least one media query */
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}

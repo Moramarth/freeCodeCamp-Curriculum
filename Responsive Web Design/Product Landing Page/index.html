@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance-Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--User Stories:-->
+<!--Your product landing page should have a header element with a corresponding id="header"-->
+<header id="header">
+    <!--You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)-->
+    <img src="https://github.com/Moramarth/Maintenance-Management/blob/main/static/images/default_company_logo.jpg?raw=true" alt="company-logo" id="header-img">
+    <h1>Maintenance-Management software for business</h1>
+    <!--
+    Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+    The navbar should always be at the top of the viewport
+    -->
+    <nav id="nav-bar">
+        <!--
+        You can see at least three clickable elements inside the nav element, each with the class nav-link
+        When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+        -->
+        <a href="#quote-form" class="nav-link">Get a quote</a>
+        <a href="#more-info" class="nav-link">Our product</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+</header>
+<main>
+    <section id="quote-form">
+        <!--
+        Your landing page has a form element with a corresponding id="form"
+        When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+        -->
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <!--
+            Within the form, there is an input field with id="email" where you can enter an email address
+            The #email input field should have placeholder text to let users know what the field is for
+            The #email input field uses HTML5 validation to confirm that the entered text is an email address
+            -->
+            <input id="email" name="email" type="email" placeholder="Enter a valid email" required/>
+            <!--Within the form, there is a submit input with a corresponding id="submit"-->
+            <input id="submit" type="submit" value="Get a quote"/>
+        </form>
+    </section>
+    <section id="more-info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae labore nesciunt. Est consectetur, rem dolorum neque, esse reprehenderit tenetur illo quos, quaerat pariatur doloribus placeat cupiditate dolor magni delectus?</p>
+        <!--You can watch an embedded product video with id="video"-->
+        <iframe id="video" src="https://www.youtube.com/shorts/2l-HYpPp7ng"></iframe>
+    </section>
+    <section id="pricing">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae labore nesciunt. Est consectetur, rem dolorum neque, esse reprehenderit tenetur illo quos, quaerat pariatur doloribus placeat cupiditate dolor magni delectus?</p>
+    </section>
+</main>
+<!--
+1. DONE You should have a header element with an id of header.
+2. DONE You should have an img element with an id of header-img.
+3. DONE Your #header-img should be a descendant of the #header.
+4. DONE Your #header-img should have a src attribute.
+5. DONE Your #header-img’s src value should be a valid URL (starts with http).
+6. DONE You should have a nav element with an id of nav-bar.
+7. DONE Your #nav-bar should be a descendant of the #header.
+8. DONE You should have at least 3 .nav-link elements within the #nav-bar.
+9. DONE Each .nav-link element should have an href attribute.
+10. DONE Each .nav-link element should link to a corresponding element on the landing page (has an href with a value of another element's id. e.g. #footer).
+11. DONE You should have a video or iframe element with an id of video.
+12. DONE Your #video should have a src attribute.
+13. DONE You should have a form element with an id of form.
+14. DONE You should have an input element with an id of email.
+15. DONE Your #email should be a descendant of the #form.
+16. DONE Your #email should have the placeholder attribute with placeholder text.
+17. DONE Your #email should use HTML5 validation by setting its type to email.
+18. DONE You should have an input element with an id of submit.
+19. DONE Your #submit should be a descendant of the #form.
+20. DONE Your #submit should have a type of submit.
+21. DONE Your #form should have an action attribute of https://www.freecodecamp.com/email-submit.
+22. DONE Your #email should have a name attribute of email.
+23. DONE Your #nav-bar should always be at the top of the viewport.
+24. DONE Your Product Landing Page should use at least one media query.
+25. DONE Your Product Landing Page should use CSS Flexbox at least once.-->
+</body>
+</html>
