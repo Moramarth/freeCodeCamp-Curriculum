@@ -1,0 +1,11 @@
+/* Your portfolio should have at least one media query */
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+header {
+    position:fixed;
+    top:0;
+}
